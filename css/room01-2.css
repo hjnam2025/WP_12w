@@ -5,14 +5,14 @@
 	    font-style: normal;
 	}
 
-	@font-face {
+@font-face {
 	    font-family: 'GmarketSansMedium';
 	    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff') format('opentype');
 	    font-weight: normal;
 	    font-style: normal;
 	}
 
-	@font-face {
+@font-face {
 	    font-family: 'GmarketSansBold';
 	    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansBold.woff') 
 	    	format('opentype');
@@ -31,7 +31,7 @@
 		p{font-family: 'GmarketSansLight';
 		 font-size: 1.8rem; 
 		}
-		body,h1,h2,p,ol,ul{margin: 0; }
+		body,h1,h2,p{margin: 0; }
 
 
 		.wrap{width:600px; margin:auto;}
@@ -50,7 +50,6 @@
 
 
 	body {
-	    font-family: sans-serif;
 	    display: flex;
 	    justify-content: center;
 	    align-items: center;
@@ -87,7 +86,7 @@
 
 	.answer-btn {
 	    padding: 12px 25px;
-	    margin: 8px; /* 버튼 간 간격 조정 */
+	    margin: 8px; 
 	    border: none;
 	    border-radius: 5px;
 	    cursor: pointer;
@@ -117,7 +116,7 @@
 	}
 
 	#result-image {
-	    max-width: 100%; /* 컨테이너 너비에 맞게 조절 */
+	    max-width: 100%; 
 	    height: auto;
 	    border: 1px solid #ccc;
 	    margin-top: 15px;
