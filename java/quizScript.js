@@ -27,14 +27,8 @@ const results = {
         text: "CCC",
         image: "../img/s-03.png" 
     },
-    // 동점 등 특별한 경우를 위한 결과도 정의할 수 있습니다.
-    // 예를 들어 A와 B가 동점일 때:
-    // AB_Tie: {
-    //     text: "당신은 A와 B의 성향을 모두 가진 개발자입니다!",
-    //     image: "img/result_AB.png"
-    // }
+    
 };
-// -------------------------------------
 
 
 const answerButtons = document.querySelectorAll('.answer-btn');
@@ -88,8 +82,9 @@ function moveToNextQuestion() {
 
 function showResult() {
    
+    console.log("showResult 함수 실행됨")  
+     
     quizContainer.style.display = 'none';
-
     resultContainer.style.display = 'block'
 
     let winningCategory = null;
@@ -119,7 +114,7 @@ function showResult() {
 
     } else {
         
-        resultText.textContent = "결과를 불러오는데 문제가 발생했습니다.";
+        resultText.textContent = "결과를 불러오는 데 문제가 발생했습니다.";
         resultImage.style.display = 'none'; 
         console.error("최종 결과를 매핑할 카테고리를 찾지 못했습니다:", winningCategory, categoryScores);
     }
